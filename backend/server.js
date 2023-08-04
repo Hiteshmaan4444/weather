@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve('../') + '/frontend/index.html');
+  res.sendFile(path.resolve('./') + '/frontend/index.html');
 });
 
 app.use('/api/weather', require('./route/weatherRoute'));
