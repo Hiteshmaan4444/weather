@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/frontend/index.html');
+});
+
 app.use('/api/weather', require('./route/weatherRoute'));
 
 app.listen(process.env.PORT, () => {
