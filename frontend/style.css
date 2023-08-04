@@ -1,0 +1,127 @@
+.body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+  width: 370px;
+  background-color: rgb(103, 103, 174);
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin: 10px;
+}
+
+input {
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+button {
+  width: 10%;
+  height: 40px;
+  padding: 3px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+#search-icon {
+  width: 60%;
+}
+
+#error {
+  display: none;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+#error p {
+  font-size: 20px;
+}
+.weather {
+  width: 100%;
+  display: none;
+}
+.weather-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+#name,
+#temp,
+#condition-name {
+  margin: 0;
+  color: white;
+}
+
+#name {
+  font-size: 24px;
+}
+#condition-img {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.condition {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#condition-name {
+  font-size: 35px;
+  margin: 5px;
+}
+
+.wind {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wind img {
+  width: 60px;
+  height: 60px;
+}
+
+.humidity,
+.wind-speed {
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+}
+
+.humidity {
+  padding-left: 10px;
+}
+.wind-speed {
+  padding-right: 10px;
+}
+#description {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
